@@ -3,5 +3,5 @@ uvicorn
 python-multipart
 scikit-learn
 pandas
-numpys
+numpy
 pydantic
