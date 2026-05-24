@@ -2,9 +2,6 @@
 import sys
 import os
 
-# This line tells Python where to find matcher.py
-# Since matcher.py is in the ml/ folder, not backend/
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'ml'))
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
