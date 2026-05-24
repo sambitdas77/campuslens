@@ -4,7 +4,7 @@ import { MOCK_SKILLS, MOCK_RESULTS } from './mockData';
 const USE_MOCK = false;
 
 // Hardcode the ngrok URL directly — no fallback to localhost
-const BASE_URL = 'https://drainage-jailbird-extras.ngrok-free.dev';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://campuslens-backend-ywk7.onrender.com';
 
 const api = axios.create({
   baseURL: BASE_URL,
